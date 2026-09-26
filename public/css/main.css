@@ -1,0 +1,105 @@
+/* Element selector */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #CFD6EA;
+  color: #222;
+}
+
+/* Element selector */
+header {
+  text-align: center;
+  padding: 30px;
+  background: #423629;
+  color: white;
+}
+
+/* ID selector */
+#add-game {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #4F5D2F;
+  color:#CFD6EA;
+  border-radius: 8px;
+}
+
+/*login*/
+#login {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #4F5D2F;
+  color:#CFD6EA;
+  border-radius: 8px;
+}
+
+/*logout
+
+#logout{
+  display: flex;
+  justify-content: center;
+}
+*/
+
+#logout-button {
+  display: block;
+  margin: 18px auto;
+  padding: 16px;
+  background-color: #1f2512;
+  color:#CFD6EA;
+}
+
+/* ID selector */
+#game-library {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 55px;
+  background: #A8E0FF;
+  border-radius: 18px;
+}
+
+/* Class selector + Flexbox */
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.form-row label {
+  width: 140px;
+  font-weight: bold;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 8px;
+}
+
+/* Element selector */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Element selector */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Element selector */
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Class selector */
+.game-row {
+  background: rgb(255, 255, 255);
+}
