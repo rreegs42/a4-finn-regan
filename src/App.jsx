@@ -1,21 +1,24 @@
 import React, { useState, useEffect } from 'react'
 
+//hansle the library functions, with edit and delete
 function GameRow({ game, onDelete, onEdit }) {
     return (
         <tr className="game-row">
-        <td>{game.name}</td>
-        <td>{game.genre}</td>
-        <td>{game.hours}</td>
-        <td>{game.rating}</td>
-        <td>{game.recommendation}</td>
-        <td>
-            <button onClick={() => onEdit(game)}>Edit</button>
-            <button onClick={() => onDelete(game._id)}>🗑</button>
+            <td>{game.name}</td>
+            <td>{game.genre}</td>
+            <td>{game.hours}</td>
+            <td>{game.rating}</td>
+            <td>{game.recommendation}</td>
+            <td>
+                
+               <button onClick={() => onEdit(game)}>Edit</button>
+                <button onClick={() => onDelete(game._id)}>🗑</button>
         </td>
         </tr>
     )
 }
 
+//handle the form submit (both new games and editing games)
 function GameForm({ game, onChange, onSubmit, editing }) {
     return (
         <section id="add-game">
@@ -23,6 +26,7 @@ function GameForm({ game, onChange, onSubmit, editing }) {
 
             <form onSubmit={onSubmit}>
                 <section className="form-row">
+                    
                     <label htmlFor="gamename">Game Name:</label>
                     <input
                         type="text"
@@ -77,12 +81,13 @@ function GameForm({ game, onChange, onSubmit, editing }) {
                 </section>
 
                 <button>
-                    {editing ? 'Save Changes' : 'Add Game'}
+                {editing ? 'Save Changes' : 'Add Game'}
                 </button>
             </form>
         </section>
     )
 }
+
 
 function App() {
     const [session, setSession] = useState(null)
